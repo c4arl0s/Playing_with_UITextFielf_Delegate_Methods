@@ -10,6 +10,10 @@
 
 @interface NextViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UITextField *textField1;
+@property (weak, nonatomic) IBOutlet UITextField *textField2;
+@property (weak, nonatomic) IBOutlet UITextField *textField3;
+@property (weak, nonatomic) IBOutlet UITextField *textField4;
 @end
 
 @implementation NextViewController

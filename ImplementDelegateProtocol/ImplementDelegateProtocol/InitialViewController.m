@@ -35,8 +35,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.view.backgroundColor = UIColor.blueColor;
     self.infoLabel.text = @"wait for the tap on the second view";
+    
     [self returnNSArray];
     [self returnNSArrayFromNSMutableArray];
     
@@ -123,8 +125,34 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
+    self.view.backgroundColor = [UIColor yellowColor];
     _infoLabel.hidden = NO;
-    return NO;
+    return YES;
+}
+
+- (BOOL)textFieldShouldClear:(UITextField *)textField
+{
+    NSLog(@"Clear buttton pressed");
+    self.view.backgroundColor = [UIColor redColor];
+    return YES;
+}
+
+-(IBAction)userDoneEnteringText:(id)sender
+{
+    NSLog(@" what action ?");
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"Tocaste view from self");
+    [self.textField resignFirstResponder];
+    self.view.backgroundColor = [UIColor blackColor];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    self.view.backgroundColor = [UIColor whiteColor];
+    NSLog(@"The view did disappear");
 }
 
 @end
