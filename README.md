@@ -2,6 +2,8 @@
 Playing_with_UITextFielf_Delegate_Methods
 
 - textFieldShouldBeginEditing
+- textFieldDidBeginEditing
+- textFieldShouldEndEditing
 - 
 
 ``` objective-c
