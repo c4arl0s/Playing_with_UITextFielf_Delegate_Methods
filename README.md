@@ -1,8 +1,8 @@
 # Playing_with_UITextFielf_Delegate_Methods
 Playing_with_UITextFielf_Delegate_Methods
 
-- textFieldShouldBeginEditing
-- textFieldDidBeginEditing
+- textFieldShouldBeginEditing:  Editing is about to begin
+- textFieldDidBeginEditing: 
 - textFieldShouldEndEditing
 - 
 
@@ -114,7 +114,9 @@ Playing_with_UITextFielf_Delegate_Methods
     return YES;
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField
+- (void)
+
+:(UITextField *)textField
 {
     _textField.backgroundColor = [UIColor yellowColor];
     NSLog(@"Editing has began");
