@@ -1,10 +1,10 @@
 # Playing_with_UITextFielf_Delegate_Methods
 Playing_with_UITextFielf_Delegate_Methods
 
-- textFieldShouldBeginEditing:  Editing is about to begin
+- textFieldShouldBeginEditing:  Editing is about to begin.
 - textFieldDidBeginEditing: 
-- textFieldShouldEndEditing
-- 
+- textFieldShouldEndEditing: Editing is about to end.
+- textFieldShouldReturn:
 
 ``` objective-c
 //
