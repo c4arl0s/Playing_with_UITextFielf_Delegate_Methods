@@ -38,4 +38,9 @@
     }
 }
 
+-(void)dealloc
+{
+    NSLog(@"Dealloc NextViewController");
+}
+
 @end

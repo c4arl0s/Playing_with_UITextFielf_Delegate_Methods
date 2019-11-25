@@ -2,7 +2,7 @@
 //  ViewController.m
 //  ImplementDelegateProtocol
 //
-//  Created by Carlos Santiago Cruz on 6/1/19.
+//  Created by Carlos Santiago Cruz on 11/17/19.
 //  Copyright © 2019 Carlos Santiago Cruz. All rights reserved.
 //
 
@@ -62,7 +62,7 @@
     
     nextViewController = [[NextViewController alloc] init];
     nextViewController.delegate = self;
-    [self presentViewController:nextViewController animated:NO completion:nil];
+    [self presentViewController:nextViewController animated:YES completion:nil];
     
 }
 -(void)buttonDidTapped:(NSInteger)times
@@ -123,7 +123,8 @@
     NSLog(@"Editing Ended");
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
     [textField resignFirstResponder];
     self.view.backgroundColor = [UIColor yellowColor];
     _infoLabel.hidden = NO;
@@ -153,6 +154,11 @@
 {
     self.view.backgroundColor = [UIColor whiteColor];
     NSLog(@"The view did disappear");
+}
+
+-(void)dealloc
+{
+    NSLog(@"Dealloc InitialViewController");
 }
 
 @end
