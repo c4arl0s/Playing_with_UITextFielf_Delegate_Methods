@@ -114,9 +114,7 @@ Playing_with_UITextFielf_Delegate_Methods
     return YES;
 }
 
-- (void)
-
-:(UITextField *)textField
+- (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     _textField.backgroundColor = [UIColor yellowColor];
     NSLog(@"Editing has began");
