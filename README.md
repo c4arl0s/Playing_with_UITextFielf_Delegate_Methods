@@ -1,4 +1,4 @@
-# Playing with UITextFielf Delegate Methods
+# Playing with UITextField Delegate Methods
 Playing_with_UITextFielf_Delegate_Methods
 
 - textFieldShouldBeginEditing:  Editing is about to begin.
